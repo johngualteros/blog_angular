@@ -1,0 +1,15 @@
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: fixed;
+  top: 65%;
+  left: 85%;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 1, 72),
+    rgb(0, 98, 255),
+    rgb(60, 183, 255)
+  );
+  z-index: 1;
+}

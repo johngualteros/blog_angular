@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-blog-fcf2a": {
+      "hosting": {
+        "blog_angular": [
+          "angular-blog-fcf2a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-blog-fcf2a"
+  }
+}

@@ -1,0 +1,41 @@
+<div class="container-login">
+  <div class="container-form">
+    <!-- Form -->
+    <div class="form">
+      <h1>Login</h1>
+      <form (ngSubmit)="onSubmit()">
+        <div>
+          <label for="email">Email</label>
+          <input type="email" placeholder="Please enter a email" name="email" [(ngModel)]="user.email" />
+        </div>
+        <div>
+          <label for="">Password</label>
+          <input
+            type="password"
+            placeholder="Please enter the password"
+            name="password"
+            [(ngModel)]="user.password"
+          />
+        </div>
+        <button type="submit" class="btn login">Login</button>
+      </form>
+    </div>
+    <!-- Other Forms Login -->
+    <div class="container-buttons-options">
+      <button class="google" (click)="loginWithGoogle()">
+        <img src="../../../assets/google.png" />Login with Google
+      </button>
+      <button class="facebook" (click)="loginWithFacebook()">
+        <img src="../../../assets/facebook.png" />Login with Facebook
+      </button>
+      <button class="github" (click)="loginWithGithub()">
+        <img src="../../../assets/github.png" />Login with Github
+      </button>
+    </div>
+    <!-- Register Link -->
+    <div class="container-register">
+      <p>Don't have an account?</p>
+      <a routerLink="/register">Register</a>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,8 @@
 # BlogAngular
+![](./src/assets/blog_01.png)
+![](./src/assets/blog_02.png)
+![](./src/assets/blog_03.png)
+![](./src/assets/blog_04.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 

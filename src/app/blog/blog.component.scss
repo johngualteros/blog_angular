@@ -1,0 +1,45 @@
+$background: #000;
+$text-color: #fff;
+$secondary-color: #ddd;
+
+@mixin btn(){
+  background-color: transparent;
+  color: $text-color;
+  border: 1px solid $text-color;
+  padding: 7px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s linear;
+  &:hover {
+    background-color: $text-color;
+    color: $background;
+    transition: all 0.5s linear;
+  }
+}
+header{
+  background-color: rgba(0, 0, 0, .5);
+  backdrop-filter: blur(10px);
+  color: $text-color;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  .info{
+    display: flex;
+    align-items: center;
+    img{
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+  }
+  button{
+    @include btn();
+  }
+}

@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+$background: #000;
+$text-color: #fff;
+$secondary-color: #ddd;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: $background;
+  font-family: 'Ubuntu', sans-serif;
+  color: $text-color;
+  overflow-x: hidden;
+}

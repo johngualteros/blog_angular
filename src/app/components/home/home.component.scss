@@ -1,0 +1,73 @@
+$background: #000;
+$text-color: #fff;
+$secondary-color: #ddd;
+
+@mixin button($fontSize) {
+  background-color: transparent;
+  color: $text-color;
+  border: 1px solid $text-color;
+  padding: 7px 16px;
+  border-radius: 5px;
+  font-size: $fontSize;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s linear;
+  &:hover {
+    background-color: $text-color;
+    color: $background;
+    transition: all 0.5s linear;
+  }
+}
+.container-home {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+
+  header {
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    button {
+      @include button(1rem);
+    }
+  }
+  main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      background-image: linear-gradient(
+        to right,
+        rgb(0, 1, 72),
+        rgb(0, 98, 255),
+        rgb(60, 183, 255)
+      );
+      color: transparent;
+      -webkit-background-clip: text;
+      font-size: 6rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      color: $secondary-color;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    button {
+      @include button(1.5rem);
+    }
+  }
+}

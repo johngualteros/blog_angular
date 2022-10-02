@@ -1,0 +1,70 @@
+$background: #000;
+$text-color: #fff;
+$secondary-color: #ddd;
+
+main{
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $secondary-color;
+  h2,h3,h4,h5,h6{
+    color: $text-color;
+  }
+  .container-blog{
+    width: 50%;
+    padding: 30px 0;
+    height: auto;
+    text-align: justify;
+    h1 {
+      background-image: linear-gradient(
+        to right,
+        rgb(255, 60, 66),
+        rgb(255, 115, 0),
+        rgb(255, 226, 60)
+      );
+      color: transparent;
+      -webkit-background-clip: text;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  pre{
+    margin: 10px;
+    background-color: #111111;
+    color: $text-color;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+    button{
+      background-color: rgb(255, 60, 66);
+      color: $text-color;
+      border: none;
+      padding: 5px;
+      border-radius: 5px;
+      margin-left: auto;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  main{
+    .container-blog{
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 458px){
+  main{
+    .container-blog{
+      width: 100%;
+    }
+  }
+}
